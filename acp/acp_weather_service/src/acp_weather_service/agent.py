@@ -22,10 +22,12 @@ def get_token() -> str:
     client_id = "weather-agent"
     realm_name = "master"
     client_secret = os.getenv("CLIENT_SECRET")
-
+    
+    print(client_secret)
+    
     user_username = "test-user"
     user_password = "test-password"
-
+    
     try:
         keycloak_openid = KeycloakOpenID(server_url=keycloak_url,
                                         client_id=client_id,
