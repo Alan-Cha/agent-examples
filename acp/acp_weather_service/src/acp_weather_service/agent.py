@@ -23,6 +23,8 @@ def get_token() -> str:
     realm_name = "master"
     client_secret = os.getenv("CLIENT_SECRET")
     
+    print("THIS IS THE SECRET")
+    
     print(client_secret)
     
     user_username = "test-user"
